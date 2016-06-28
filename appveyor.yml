@@ -10,7 +10,7 @@ build:
   verbosity: detailed
 before_build:
   - cmd: set PackageVersion=$version$
-  - cmd: ECHO Package Version is: $version$
+  - cmd: ECHO Package Version is: {version}
   - nuget restore
 artifacts:
   - path: '**\*.nupkg'
