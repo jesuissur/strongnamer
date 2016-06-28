@@ -9,6 +9,7 @@ build:
   project: .\build\build.proj
   verbosity: detailed
 before_build:
+  - cmd: set PackageVersion=$version$
   - nuget restore
 artifacts:
   - path: '**\*.nupkg'
