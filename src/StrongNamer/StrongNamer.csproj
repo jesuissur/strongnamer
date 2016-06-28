@@ -68,7 +68,7 @@
     <None Include="SharedKey.snk">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="StrongNamer.targets">
+    <None Include="StrongNamer.For.MsBuild12.targets">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
