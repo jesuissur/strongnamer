@@ -7,3 +7,6 @@ build:
   verbosity: normal
 before_build:
   - nuget restore
+artifacts:
+  - path: '**\*.nupkg'
+    name: Nuget packages
