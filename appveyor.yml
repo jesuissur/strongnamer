@@ -2,9 +2,11 @@ version: 1.0.{build}
 nuget:
   account_feed: true
   project_feed: true
+environment:
+  PackageVersion: '{version}'
 build:
   project: .\build\build.proj
-  verbosity: normal
+  verbosity: detailed
 before_build:
   - nuget restore
 artifacts:
