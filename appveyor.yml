@@ -4,6 +4,7 @@ nuget:
   project_feed: true
 environment:
   PackageVersion: '{version}'
+  Build: '{build}'
 build:
   project: .\build\build.proj
   verbosity: detailed
