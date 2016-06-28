@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata minClientVersion="2.7.2">
-        <id>StrongNamer</id>
+        <id>StrongNamer.For.MsBuild12</id>
         <version>0.0.1</version>
         <title>Strong Namer - Automatically Add Strong Names to References</title>
         <authors>Daniel Plaisted</authors>
         <owners>Daniel Plaisted</owners>
-        <licenseUrl>https://github.com/dsplaisted/strongnamer/blob/master/LICENSE</licenseUrl>
-        <projectUrl>https://github.com/dsplaisted/strongnamer</projectUrl>
+        <licenseUrl>https://github.com/jesuissur/strongnamer/tree/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/jesuissur/strongnamer</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Strong Namer will automatically add strong names to referenced assemblies which do not already have a strong name.  This will allow you to reference and use NuGet packages with assemblies which are not strong named from your projects that do use a strong name.</description>
+        <description>Strong Namer will automatically add strong names to referenced assemblies which do not already have a strong name.  This will allow you to reference and use NuGet packages with assemblies which are not strong named from your projects that do use a strong name.  NOTE: This fork use MsBuild 12 instead of MsBuild 14 used in the original project: https://github.com/dsplaisted/strongnamer/ </description>
         <summary>Strong Namer will automatically add strong names to referenced assemblies which do not already have a strong name.</summary>
         <tags>strongname strong name naming</tags>
     </metadata>
