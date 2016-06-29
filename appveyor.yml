@@ -3,13 +3,13 @@ nuget:
   account_feed: true
   project_feed: true
 environment:
-  PackageVersion: '{version}'
-  Build: '{build}'
+  PackageVersion: {version}
+  Build: {build}
 build:
   project: .\build\build.proj
-  verbosity: detailed
+  verbosity: normal
 before_build:
-  - cmd: set PackageVersion='{version}'
+  - cmd: set PackageVersion=%version%
   - cmd: ECHO Package Version is %PackageVersion%
   - nuget restore
 artifacts:
