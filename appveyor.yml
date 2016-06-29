@@ -9,7 +9,7 @@ build:
   project: .\build\build.proj
   verbosity: detailed
 before_build:
-  - cmd: set PackageVersion=$version$
+  - cmd: set PackageVersion={version}
   - cmd: ECHO Package Version is %PackageVersion%
   - nuget restore
 artifacts:
