@@ -4,14 +4,10 @@ nuget:
   project_feed: true
 environment:
   PackageVersion: $(appveyor_build_version)
-  PackageVersion2: $(appveyor_build_version)
 build:
   project: .\build\build.proj
   verbosity: normal
 before_build:
-  - cmd: set PackageVersion=$(APPVEYOR_BUILD_VERSION)
-  - cmd: ECHO Package Version is %%PackageVersion%%
-  - cmd: ECHO Package Version is %%PackageVersion2%%
   - nuget restore
 artifacts:
   - path: '**\*.nupkg'
