@@ -5,7 +5,7 @@ nuget:
 environment:
   PackageVersion: $(appveyor_build_version)
 build_script:
-  - cmd: msbuild ".\build\build.proj" /verbosity:normal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /p:PackageVersion=$(appveyor_build_version)
+  - cmd: msbuild ".\build\build.proj" /verbosity:normal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /p:PackageVersion=%appveyor_build_version%
 before_build:
   - nuget restore
 artifacts:
